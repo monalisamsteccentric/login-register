@@ -34,7 +34,7 @@ const Register = () => {
     if(Object.keys(errors).length === 0 && isPassed){
       navigate('/login')
     }
-  },[errors])
+  },[errors, isPassed,navigate])
   const validate = (details) =>{
       const errors = {}
      if(!details.email){
